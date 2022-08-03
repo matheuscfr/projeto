@@ -8,4 +8,5 @@ steps:
         ls
         cp my-secret-file.txt .env
         ls
+        echo -e "\nAlo"
         cat .env
