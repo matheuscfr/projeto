@@ -6,7 +6,5 @@ steps:
       - |
         echo "$(gcloud beta secrets versions access --secret=my-secret latest)" > /workspace/my-secret-file.txt
         ls
-        cp my-secret-file.txt .env
-        ls
-        echo -e "\nAlo"
-        cat .env
+        echo -e "\n"
+        cat my-secret-file.txt
