@@ -1,10 +1,8 @@
 steps:
-  - name: 'gcr.io/cloud-builders/gcloud'
-    entrypoint: "bash"
-    args:
-      - "-c"
-      - |
-        echo "$(gcloud beta secrets versions access --secret=my-secret latest)" > /workspace/my-secret-file.txt
-        ls
-        echo -e "\n"
-        cat my-secret-file.txt
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: "bash"
+  args: ['-c','gcloud beta secrets versions access --secret=tracking-homolog latest)" > /workspace/my-secret-file.txt']
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: "bash"
+  args: ['teste.sh']
+
