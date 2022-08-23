@@ -5,3 +5,6 @@ steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: "bash"
   args: ['teste.sh']
+options:
+  pool:
+    name: 'projects/validacao-de-ambientes/locations/us-central1/workerPools/teste'
